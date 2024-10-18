@@ -1,77 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Artists - Voices Unheard</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="images/websiteImages/logo.ico" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="https://voicesunheardproject.com/images/websiteImages/logo.png"
+      type="image/png"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="logo-container">
-                <img src="images/websiteImages/logo.jpeg" alt="logo" class="logo-image">
-                <span class="logo-text">Voices Unheard</span>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="artists.html">Artists</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="logo-container">
+          <img
+            src="images/websiteImages/logo.jpeg"
+            alt="logo"
+            class="logo-image"
+          />
+          <span class="logo-text">Voices Unheard</span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="artists.html">Artists</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <section class="content">
-        <h2>Our Artists</h2>
-        <p>Meet the talented and diverse artists featured at Voices Unheard. Filter by genre below.</p>
-        
-        <!-- Filter Buttons -->
-        <div class="filter-buttons">
-            <button class="filter-btn" data-genre="all">All</button>
-            <button class="filter-btn" data-genre="indie-rock">Indie Rock</button>
-            <button class="filter-btn" data-genre="jazz">Jazz</button>
-            <button class="filter-btn" data-genre="hip-hop">Hip-Hop</button>
-            <button class="filter-btn" data-genre="rap">Rap</button>
-            <!-- Add more filter buttons for other genres -->
-        </div>
+      <h2>Our Artists</h2>
+      <p>
+        Meet the talented and diverse artists featured at Voices Unheard. Filter
+        by genre below.
+      </p>
 
-        <!-- Artists Grid -->
-        <div class="artists-grid">
-            <div class="artist-card" data-genre="indie-rock">
-                <img src="images/artist1.jpg" alt="Artist 1" class="artist-image">
-                <h3>Artist 1</h3>
-                <p>Genre: Indie Rock</p>
-                <p>A rising star in the indie scene, Artist 1 blends folk influences with modern indie vibes.</p>
-            </div>
-            <div class="artist-card" data-genre="jazz">
-                <img src="images/artist2.jpg" alt="Artist 2" class="artist-image">
-                <h3>Artist 2</h3>
-                <p>Genre: Jazz</p>
-                <p>With soulful melodies and a fresh take on classic jazz, Artist 2 captivates every audience.</p>
-            </div>
-            <div class="artist-card" data-genre="hip-hop">
-                <img src="images/artist3.jpg" alt="Artist 3" class="artist-image">
-                <h3>Artist 3</h3>
-                <p>Genre: Hip-Hop</p>
-                <p>Artist 3 brings raw energy and lyrical finesse, delivering performances that leave a lasting impact.</p>
-            </div>
-            <div class="artist-card" data-genre="rap">
-                <img src="images/artist3.jpg" alt="Artist 4" class="artist-image">
-                <h3>Artist 4</h3>
-                <p>Genre: Rap</p>
-                <p>Artist 4 has a fast-paced style of rap that excites the listeners. He's been passionate about music for a while.</p>
-            </div>
-            <!-- Add more artist cards with respective genres -->
+      <!-- Filter Buttons -->
+      <div class="filter-buttons">
+        <button class="filter-btn" data-genre="all">All</button>
+        <button class="filter-btn" data-genre="indie-rock">Indie Rock</button>
+        <button class="filter-btn" data-genre="jazz">Jazz</button>
+        <button class="filter-btn" data-genre="hip-hop">Hip-Hop</button>
+        <button class="filter-btn" data-genre="rap">Rap</button>
+        <!-- Add more filter buttons for other genres -->
+      </div>
+
+      <!-- Artists Grid -->
+      <div class="artists-grid">
+        <div class="artist-card" data-genre="indie-rock">
+          <img src="images/artist1.jpg" alt="Artist 1" class="artist-image" />
+          <h3>Artist 1</h3>
+          <p>Genre: Indie Rock</p>
+          <p>
+            A rising star in the indie scene, Artist 1 blends folk influences
+            with modern indie vibes.
+          </p>
         </div>
+        <div class="artist-card" data-genre="jazz">
+          <img src="images/artist2.jpg" alt="Artist 2" class="artist-image" />
+          <h3>Artist 2</h3>
+          <p>Genre: Jazz</p>
+          <p>
+            With soulful melodies and a fresh take on classic jazz, Artist 2
+            captivates every audience.
+          </p>
+        </div>
+        <div class="artist-card" data-genre="hip-hop">
+          <img src="images/artist3.jpg" alt="Artist 3" class="artist-image" />
+          <h3>Artist 3</h3>
+          <p>Genre: Hip-Hop</p>
+          <p>
+            Artist 3 brings raw energy and lyrical finesse, delivering
+            performances that leave a lasting impact.
+          </p>
+        </div>
+        <div class="artist-card" data-genre="rap">
+          <img src="images/artist3.jpg" alt="Artist 4" class="artist-image" />
+          <h3>Artist 4</h3>
+          <p>Genre: Rap</p>
+          <p>
+            Artist 4 has a fast-paced style of rap that excites the listeners.
+            He's been passionate about music for a while.
+          </p>
+        </div>
+        <!-- Add more artist cards with respective genres -->
+      </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Voices Unheard. All rights reserved.</p>
+      <p>&copy; 2024 Voices Unheard. All rights reserved.</p>
     </footer>
 
     <script src="scripts.js"></script>
-</body>
+  </body>
 </html>
