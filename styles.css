@@ -1,0 +1,286 @@
+/* Global Styles */
+:root {
+    --color1: #ebd2ff;
+    --color2: #67378c;
+    --color3: #3d2b3f;
+    --color4: white;
+    --color5: #da6dfb;
+    --color6: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--color1);
+}
+
+h1, h2, h3 {
+    color: var(--color2);
+}
+
+/* Header Styles */
+header {
+    background-color: var(--color3);
+    color: var(--color4);
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links a:hover {
+    color: var(--color5);
+}
+
+.nav-links li {
+    margin-left: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--color4);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px; /* Adjust the size of the logo */
+    height: 50px; /* Ensure it's square */
+    border-radius: 50%; /* Make the image circular */
+    margin-right: 10px; /* Space between image and text */
+    object-fit: cover; /* Ensure the image fits without distortion */
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: url('https://example.com/hero-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color6);
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: var(--color5);
+    color: var(--color4);
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+/* Content Section Styles */
+.content {
+    padding: 2rem;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--color3);
+    color: var(--color4);
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Artists Page Styles */
+.artists-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+.artist-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.artist-card:hover {
+    transform: translateY(-5px); /* Adds a hover effect for depth */
+}
+
+.artist-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures the image scales nicely */
+    border-bottom: 1px solid #ddd;
+}
+
+.artist-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    color: #333;
+}
+
+.artist-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.filter-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: var(--color5);
+}
+
+.filter-btn.active {
+    background-color: var(--color5); /* Active button style */
+}
+
+/* Contact Page Styles */
+.contact-page {
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact-page h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-page p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Social Media Section */
+.social-media-section {
+    margin: 2rem 0;
+}
+
+.social-media-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    font-size: 1.5rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-link i {
+    font-size: 1.8rem;
+    color: var(--color5);
+}
+
+.social-link:hover {
+    color: var(--color5);
+}
+
+/* Direct Contact Section */
+.direct-contact-section {
+    margin: 2rem 0;
+}
+
+.direct-contact-section h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.direct-contact-section p {
+    font-size: 1.2rem;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .social-icons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
